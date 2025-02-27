@@ -1,15 +1,12 @@
 package org.iitwf.selenium.mmpequinox;
 
 import java.io.IOException;
-
 import org.iitwf.mmp.pages.patientmodule.EditProfilePage;
 import org.iitwf.mmp.pages.patientmodule.HomePage;
 import org.iitwf.mmp.pages.patientmodule.MMPUtility;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -46,7 +43,6 @@ public class EditProfiletest extends FrameworkLibrary{
 	ScreenshotUtility screenshotUtil = new ScreenshotUtility(driver);
 	String screenshotPath = screenshotUtil.captureScreenshot("Edit Profile_Page Step 1");
 	extentTest.addScreenCaptureFromPath(screenshotPath, "Edit Profile_landing Page");
-	
 	EditProfilePage editProObj = new EditProfilePage(driver);
 	String actualFName = editProObj.editAllFields();
 	String expectedFName = prop.getProperty("patient_username");

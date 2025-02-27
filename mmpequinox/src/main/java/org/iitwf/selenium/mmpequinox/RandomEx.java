@@ -71,7 +71,7 @@ public class RandomEx {
 	public static int generateRandomNumber(int a) {
 		
 		Random rand = new Random();
-		a = rand.nextInt(100); //0 inclusive 100 exclusive
+		a = rand.nextInt(1); //0 inclusive 100 exclusive
 		System.out.println(a);
 		return a;
 		

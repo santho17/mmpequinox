@@ -3,13 +3,7 @@ package org.iitwf.selenium.mmpequinox;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-
-import org.jspecify.annotations.Nullable;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Sanitysuite extends FrameworkLibrary {
 	/**
